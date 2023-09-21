@@ -1,0 +1,22 @@
+<div align="center">
+    
+</div>
+<div class="d-flex justify-content-center align-items-center">
+   <img src="../assets/images/Update.jpg" width="600px" height="450px" alt=""class="m-3 bgimg">
+   <form #updateform="ngForm" (ngSubmit)="updatebookdetail(updateform)" >
+       <div>
+           <label>ID  :</label>
+           <input type="text" #id (ngModel) ="id" id="id" name="id"><br><br>
+           <label>Name :</label>
+           <input type="text" #name (ngModel) ="name" id="name" name="name"><br><br>
+           <label>Price  :</label>
+           <input type="text" #price (ngModel) ="price" id="price" name="price"><br><br>
+          
+       </div><br>
+       <div>
+        
+            
+           <input type="submit" value="submit">
+       </div>
+         </form>  
+ </div>

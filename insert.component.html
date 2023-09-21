@@ -1,0 +1,19 @@
+<div align="center">
+   
+<div class="d-flex justify-content-center align-items-center">
+    <img src="../assets/images/Insert.jpg" width="900px" height="400px" alt=""class="m-3 bgimg">
+  <form #insertform="ngForm" (ngSubmit)="insertbookdetail(insertform)">
+      <div>
+          <label>ID:   </label>
+          <input type="text" #id (ngModel) ="id" id="id" name="id" Authorname="id"><br><br>
+          <label>Name: </label>
+          <input type="text" #name (ngModel) ="name" id="name" name="name" Authorname="name"><br><br>
+          <label>Price:</label>
+          <input type="text" #price (ngModel) ="price" id="price" name="price" Authorname="price"><br><br>
+          
+      </div><br>
+      <div>
+          <input type="submit" value="Submit">
+      </div>
+        </form>  
+</div>
